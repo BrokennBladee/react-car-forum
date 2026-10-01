@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Catalog from './pages/Catalog';
 import CarDetails from './pages/CarDetails';
 import Forum from './pages/Forum';
+import PostDetails from './pages/PostDetails';
 import Login from './pages/Login';
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/" element={<Catalog />} />
         <Route path="/car/:id" element={<CarDetails user={user} />} />
         <Route path="/forum" element={<Forum user={user} />} />
+        <Route path="/forum/:id" element={<PostDetails user={user} />} />
         <Route path="/login" element={<Login onLogin={handleLogin} />} />
       </Routes>
     </div>
