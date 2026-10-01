@@ -1,0 +1,37 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "name": "BMW M4 Competition",
+      "price": 85000,
+      "image": "https://images.unsplash.com/photo-1555215695-3004980adade?w=600",
+      "description": "Спортно купе с изключителна динамика и мощност.",
+      "extras": [
+        { "id": "e1", "name": "M Carbon седалки", "price": 4500 },
+        { "id": "e2", "name": "Керамични спирачки", "price": 8000 },
+        { "id": "e3", "name": "Harman Kardon озвучение", "price": 1500 }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Audi RS6 Avant",
+      "price": 115000,
+      "image": "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=600",
+      "description": "Практично комби със суперспортни възможности.",
+      "extras": [
+        { "id": "e1", "name": "Панорамен покрив", "price": 2200 },
+        { "id": "e2", "name": "Спортно изпускателно RS", "price": 3100 },
+        { "id": "e3", "name": "Нощно виждане (Night Vision)", "price": 2800 }
+      ]
+    }
+  ],
+  "forumPosts": [
+    {
+      "id": "1",
+      "author": "Иван",
+      "title": "Мнение за поддръжката на M4",
+      "content": "Някой сблъсквал ли се е с проблеми в трансмисията при по-агресивно каране?"
+    }
+  ],
+  "users": []
+}
