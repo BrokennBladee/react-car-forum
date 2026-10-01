@@ -4,7 +4,7 @@
       "id": "1",
       "name": "BMW M4 Competition",
       "price": 85000,
-      "image": "https://images.unsplash.com/photo-1555215695-3004980adade?w=600",
+      "image": "https://bmw.scene7.com/is/image/BMW/DI23_000192705_M4-Coupe_4000x4000-2:3to2?fmt=webp-alpha&wid=1493&fit=constrain%2C1",
       "description": "Спортно купе с изключителна динамика и мощност.",
       "extras": [
         { "id": "e1", "name": "M Carbon седалки", "price": 4500 },
@@ -14,13 +14,13 @@
     },
     {
       "id": "2",
-      "name": "Audi RS6 Avant",
+      "name": "BMW M5 Competition",
       "price": 115000,
-      "image": "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=600",
+      "image": "https://bmw.scene7.com/is/image/BMW/g99_driving-dynamics_fb_ssv?qlt=80&wid=1024&fmt=webp",
       "description": "Практично комби със суперспортни възможности.",
       "extras": [
         { "id": "e1", "name": "Панорамен покрив", "price": 2200 },
-        { "id": "e2", "name": "Спортно изпускателно RS", "price": 3100 },
+        { "id": "e2", "name": "Спортна изпускателна М генерация", "price": 3100 },
         { "id": "e3", "name": "Нощно виждане (Night Vision)", "price": 2800 }
       ]
     }
