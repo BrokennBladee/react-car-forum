@@ -10,17 +10,20 @@
         {
           "id": "e1",
           "name": "M Carbon седалки",
-          "price": 4500
+          "price": 4500,
+          "image": "https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/topics/magazine-article-pool/2021/entwickler-faq-04/bmw-m4-competition-si.jpg"
         },
         {
           "id": "e2",
-          "name": "Керамични спирачки",
-          "price": 8000
+          "name": "M Carbon Ceramic Brakes",
+          "price": 8000,
+          "image": "https://cdn.revolutionparts.io/images/ccd45007df44dd0f12098f486e7e8a0f/bfeeaac59c3ee53792329fd002e1e402.jpg"
         },
         {
           "id": "e3",
-          "name": "Harman Kardon озвучение",
-          "price": 1500
+          "name": "Bowers & Wilkins аудио система",
+          "price": 1500,
+          "image": "https://cdn.store-assets.com/s/370791/i/51138075.jpeg"
         }
       ]
     },
@@ -34,17 +37,20 @@
         {
           "id": "e1",
           "name": "Панорамен покрив",
-          "price": 2200
+          "price": 2200,
+          "image": "https://bmw.scene7.com/is/image/BMW/g99_panorama-glass-roof_fb?qlt=80&wid=1024&fmt=webp"
         },
         {
           "id": "e2",
-          "name": "Спортна изпускателна генерация",
-          "price": 3100
+          "name": "Спортна изпускателна M генерация",
+          "price": 3100,
+          "image": "https://www.shop.bmw-dubai.com/cdn/shop/files/forBMWE-commerce-2026-01-08T123443.187_2000x.png?v=1767861309"
         },
         {
           "id": "e3",
-          "name": "Нощно виждане (Night Vision)",
-          "price": 2800
+          "name": "M Carbon Ceramic Brakes",
+          "price": 8800,
+          "image": "https://cdn.revolutionparts.io/images/ccd45007df44dd0f12098f486e7e8a0f/bfeeaac59c3ee53792329fd002e1e402.jpg"
         }
       ]
     }

@@ -27,37 +27,90 @@ export default function CarDetails({ user }) {
   const totalPrice = car.price + extrasTotal;
 
   return (
-    <div style={{ padding: '30px', maxWidth: '800px', margin: '0 auto' }}>
+    <div style={{ padding: '30px', maxWidth: '850px', margin: '0 auto' }}>
       <h1>{car.name}</h1>
-      <img src={car.image} alt={car.name} style={{ width: '100%', borderRadius: '8px', maxHeight: '400px', objectFit: 'cover' }} />
-      <p style={{ marginTop: '15px' }}>{car.description}</p>
-      
+      <img
+        src={car.image}
+        alt={car.name}
+        style={{ width: '100%', borderRadius: '8px', maxHeight: '400px', objectFit: 'cover' }}
+      />
+      <p style={{ marginTop: '15px', fontSize: '1.1rem' }}>{car.description}</p>
+
       <h3>Избор на екстри (Конфигуратор):</h3>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
         {car.extras?.map((extra) => {
           const isSelected = selectedExtras.some((e) => e.id === extra.id);
           return (
-            <label key={extra.id} style={{ padding: '10px', border: '1px solid #ccc', borderRadius: '4px', display: 'flex', justifyContent: 'space-between', cursor: 'pointer' }}>
-              <span>
-                <input 
-                  type="checkbox" 
-                  checked={isSelected} 
+            <label
+              key={extra.id}
+              style={{
+                padding: '12px 15px',
+                border: isSelected ? '2px solid #2ecc71' : '1px solid #444',
+                borderRadius: '8px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                cursor: 'pointer',
+                backgroundColor: isSelected ? '#1b382b' : '#222',
+                transition: 'all 0.2s ease-in-out'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                <input
+                  type="checkbox"
+                  checked={isSelected}
                   onChange={() => toggleExtra(extra)}
-                  style={{ marginRight: '10px' }}
+                  style={{ width: '18px', height: '18px', cursor: 'pointer' }}
                 />
-                {extra.name}
-              </span>
-              <strong>+{extra.price.toLocaleString()} €</strong>
+                {extra.image && (
+                  <img
+                    src={extra.image}
+                    alt={extra.name}
+                    style={{
+                      width: '70px',
+                      height: '50px',
+                      objectFit: 'cover',
+                      borderRadius: '6px'
+                    }}
+                  />
+                )}
+                <span style={{ fontSize: '1.05rem', fontWeight: '500' }}>{extra.name}</span>
+              </div>
+              <strong style={{ color: '#2ecc71', fontSize: '1.1rem' }}>
+                +{extra.price.toLocaleString()} €
+              </strong>
             </label>
           );
         })}
       </div>
 
-      <div style={{ marginTop: '20px', padding: '15px', background: '#f8f9fa', borderRadius: '8px', color: '#000' }}>
+      <div
+        style={{
+          marginTop: '30px',
+          padding: '20px',
+          backgroundColor: '#1a1a1a',
+          border: '1px solid #333',
+          borderRadius: '8px'
+        }}
+      >
         <h2>Крайна цена: {totalPrice.toLocaleString()} €</h2>
-        <p>Базова цена: {car.price.toLocaleString()} € + Екстри: {extrasTotal.toLocaleString()} €</p>
+        <p style={{ color: '#aaa' }}>
+          Базова цена: {car.price.toLocaleString()} € + Екстри: {extrasTotal.toLocaleString()} €
+        </p>
         {user ? (
-          <button onClick={() => alert('Конфигурацията е запазена!')} style={{ padding: '10px 20px', background: '#27ae60', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
+          <button
+            onClick={() => alert('Конфигурацията е запазена!')}
+            style={{
+              padding: '12px 24px',
+              backgroundColor: '#2ecc71',
+              color: '#fff',
+              border: 'none',
+              borderRadius: '6px',
+              cursor: 'pointer',
+              fontWeight: 'bold',
+              fontSize: '1rem'
+            }}
+          >
             Запази конфигурацията
           </button>
         ) : (
